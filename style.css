@@ -66,7 +66,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ##ecd3e1; /* cor do card */
+  background-color: #ecd3e1; /* cor do card */
   padding: 15px 40px;
   border-radius: 25px;
   color: #070707; /* texto branco */
