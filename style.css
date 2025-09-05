@@ -1,0 +1,126 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+
+body {
+  position: relative;
+  background: url("images/BG\ LINKTREE\ -\ PODCAST\ Desktop-redimensionado-para-1325x650.jpeg")
+    no-repeat center center;
+  background-size: cover; /* padrão: cobre toda a tela */
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #000; /* cor para bordas caso use contain */
+  color: #fff;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  padding: 20px;
+
+  transform: scale(0.9); /* 90% do tamanho original */
+  transform-origin: center; /* mantém centralizado */
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  box-shadow: 10px 9px 27px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 10px 9px 27px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 9px 27px 0px rgba(0, 0, 0, 0.5);
+}
+
+.name {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 25px;
+  color: #ccc;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.link-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2c2c2c; /* cor do card */
+  padding: 15px 40px;
+  border-radius: 25px;
+  color: #ffffff; /* texto branco */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: #fff 0px solid;
+}
+
+.link-card:hover {
+  transform: scale(1.025);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  background-color: #e65eb6; /* cor do hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+.link-card .social.logos {
+  position: absolute;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+  color: #ff6bcb; /* cor dos ícones */
+}
+
+.link-card:hover .social.logos {
+  opacity: 1;
+  color: #ff6bcb; /* mantém a cor no hover */
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.footer-icon img {
+  transition: transform 0.2s;
+  opacity: 0.5;
+}
+
+.footer-icon:hover img {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@media (max-width: 1080px) and (max-height: 1920px) {
+  body {
+    background: url("images/BG\ LINKTREE\ -\ PODCAST\ Mobile\ Normal.jpg")
+      no-repeat center center;
+    background-size: cover;
+    background-attachment: scroll; /* melhor para mobile */
+  }
+}
